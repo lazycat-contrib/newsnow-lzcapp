@@ -1,0 +1,18 @@
+application:
+  subdomain: newsnow
+  upstreams:
+    - location: /
+      backend: http://newsnow:4444/
+
+services:
+  newsnow:
+    # upstream: ghcr.io/ourongxing/newsnow:v0.0.41
+    image: ghcr.1ms.run/ourongxing/newsnow:v0.0.41
+    environment:
+      - HOST=0.0.0.0
+      - PORT=4444
+      - NODE_ENV=production
+      - INIT_TABLE=true
+      - ENABLE_CACHE=true
+    binds:
+      - /lzcapp/var/data:/usr/app/.data

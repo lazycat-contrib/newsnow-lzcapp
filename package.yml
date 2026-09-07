@@ -1,0 +1,18 @@
+package: community.lazycat.app.newsnow
+version: 0.0.41
+name: NewsNow
+description: Elegant reading of real-time and hottest news.
+min_os_version: 1.5.0
+author: ourongxing
+license: MIT
+homepage: https://github.com/ourongxing/newsnow
+locales:
+  zh:
+    name: NewsNow
+    description: 优雅地阅读实时新闻与全网热点。
+  en:
+    name: NewsNow
+    description: Elegant reading of real-time and hottest news.
+permissions:
+  required:
+    - net.internet
